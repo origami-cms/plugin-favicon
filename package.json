@@ -1,0 +1,27 @@
+{
+  "name": "origami-plugin-favicon",
+  "version": "0.0.0",
+  "description": "Serve a default or custom favicon for Origami sites",
+  "main": "dist/plugin.js",
+  "repository": "https://github.com/origami-cms/plugin-favicon",
+  "author": "Tristan Matthias <hello@tristanmatthias.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:js": "tsc",
+    "prebuild": "rm -rf dist/",
+    "build": "yarn build:js",
+    "watch": "yarn build:js -w"
+  },
+  "devDependencies": {
+    "@types/serve-favicon": "^2.2.30",
+    "origami-core-server": "^0.5.4-alpha.6",
+    "tslint": "^5.11.0",
+    "tslint-config-origami": "^1.0.3",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "origami-core-lib": "^0.3.15-alpha.3",
+    "serve-favicon": "^2.5.0",
+    "to-ico": "^1.1.5"
+  }
+}
